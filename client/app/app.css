@@ -30,17 +30,112 @@
 }
 
 .table {
-  height: 250px;
-  width: 250px;
+  position: relative;
+  height: 530px;
+  width: 900px;
+/*  margin-top: 0px;
+*/  margin-left: auto;
+  margin-right: auto;
   border-style: solid;
-  border-radius: 3px;
+  border-radius: 1px;
+  background-image: radial-gradient(#00cc00, #007a00);
+}
+
+#communityCards {
+/*  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+*/
+  /*background-color: red;*/
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -220px;
+}
+
+#playersUpper {
+  /*width: 700px;*/
+  height: 140px;
+  padding: 20px;
+
+  position: relative;
+  top: 0%;
+  /*left: 50%;*/
+  /*background-color: blue;*/
+  /*margin: -50px 0 0 -320px;*/
+}
+
+#playersLower {
+  /*width: 700px;*/
+  height: 140px;
+  padding: 20px;
+
+  position: relative;
+  top: 32%;
+  /*left: 50%;*6
+
+  /*margin: -50px 0 0 -320px;*/
+  /*background-color: blue;*/
 }
 
 .card {
+  /*height: 5%;*/
+  /*display: inline-block;*/
+  width: 70px;
   border: 2px solid black;
-  border-radius: 10px;
-  position: absolute;
+  border-radius: 5px;
+  margin: 3px;
   background: white;
   z-index: 5;
   cursor: pointer;
 }
+
+.left {
+  float: left;
+  width: 175px;
+  height: 100px;
+  padding: 20px;  
+  /*background-color: red;*/
+}
+
+.right {
+  float: right;
+  width: 175px;
+  height: 100px;
+  padding: 20px;  
+  /*background-color: red;*/
+}
+
+.center {
+/*  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+*/
+  /*background-color: red;*/
+  width: 175px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -107.5px;
+}
+
+/*#playersUpper {
+  top: 13.25%;
+}*/
+
+/*#playersLower {
+  top: 113.25%;
+}*/
+
+
