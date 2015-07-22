@@ -1,0 +1,141 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.table {
+  position: relative;
+  height: 530px;
+  width: 900px;
+/*  margin-top: 0px;
+*/  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-radius: 1px;
+  background-image: radial-gradient(#00cc00, #007a00);
+}
+
+#communityCards {
+/*  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+*/
+  /*background-color: red;*/
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -220px;
+}
+
+#playersUpper {
+  /*width: 700px;*/
+  height: 140px;
+  padding: 20px;
+
+  position: relative;
+  top: 0%;
+  /*left: 50%;*/
+  /*background-color: blue;*/
+  /*margin: -50px 0 0 -320px;*/
+}
+
+#playersLower {
+  /*width: 700px;*/
+  height: 140px;
+  padding: 20px;
+
+  position: relative;
+  top: 32%;
+  /*left: 50%;*6
+
+  /*margin: -50px 0 0 -320px;*/
+  /*background-color: blue;*/
+}
+
+.card {
+  /*height: 5%;*/
+  /*display: inline-block;*/
+  width: 70px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 3px;
+  background: white;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+  width: 175px;
+  height: 100px;
+  padding: 20px;  
+  /*background-color: red;*/
+}
+
+.right {
+  float: right;
+  width: 175px;
+  height: 100px;
+  padding: 20px;  
+  /*background-color: red;*/
+}
+
+.center {
+/*  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+*/
+  /*background-color: red;*/
+  width: 175px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -107.5px;
+}
+
+/*#playersUpper {
+  top: 13.25%;
+}*/
+
+/*#playersLower {
+  top: 113.25%;
+}*/
+
+
