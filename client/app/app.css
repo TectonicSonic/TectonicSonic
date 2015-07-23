@@ -91,23 +91,24 @@
   border: 2px solid black;
   border-radius: 5px;
   margin: 3px;
-  background: white;
+  /*background: white;*/
   z-index: 5;
   cursor: pointer;
+  /*position: absolute;;*/
 }
 
 .left {
   float: left;
-  width: 175px;
-  height: 100px;
+  width: 160px;
+  height: 111px;
   padding: 20px;  
   /*background-color: red;*/
 }
 
 .right {
   float: right;
-  width: 175px;
-  height: 100px;
+  width: 160px;
+  height: 111px;
   padding: 20px;  
   /*background-color: red;*/
 }
@@ -119,8 +120,8 @@
   transform: translate(-50%, -50%);
 */
   /*background-color: red;*/
-  width: 175px;
-  height: 100px;
+  width: 160px;
+  height: 111px;
   padding: 20px;
 
   position: absolute;
@@ -130,6 +131,21 @@
   margin: -70px 0 0 -107.5px;
 }
 
+.move {
+  /*background-color: white;*/
+  margin-top: -20px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.name {
+  /*background-color: white;*/
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 /*#playersUpper {
   top: 13.25%;
 }*/
@@ -137,5 +153,6 @@
 /*#playersLower {
   top: 113.25%;
 }*/
+
 
 

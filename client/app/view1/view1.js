@@ -35,7 +35,7 @@ angular.module('app.view1', ['ngRoute'])
 	"users": [
 	  {
 	    "uid": 27694,
-	    "name": "Bumble the Brave",
+	    "name": "Bumble",
 	    "money": 13,
 	    "stake": 0,
 	    "active": true,
@@ -44,7 +44,7 @@ angular.module('app.view1', ['ngRoute'])
 
 	  {
 	    "uid": 33285,
-	    "name": "Trevor the True",
+	    "name": "Trevor",
 	    "money": 13,
 	    "stake": 0,
 	    "active": true,
@@ -53,7 +53,7 @@ angular.module('app.view1', ['ngRoute'])
 
 	  {
 	    "uid": 91137,
-	    "name": "Hagar the Horrible",
+	    "name": "Hagar",
 	    "money": 13,
 	    "stake": 0,
 	    "active": true,
@@ -62,7 +62,7 @@ angular.module('app.view1', ['ngRoute'])
 
 	  {
 	    "uid": 73921,
-	    "name": "Rambo the Resourceful",
+	    "name": "Rambo",
 	    "money": 13,
 	    "stake": 0,
 	    "active": true,
@@ -127,17 +127,25 @@ angular.module('app.view1', ['ngRoute'])
       document.getElementById("playersLower").getElementsByTagName('div')[0].appendChild(elem);
 	}
 
+
+    var elem1 = document.createElement("p");
+    elem1.className = "move";
+    elem1.innerHTML = "move";
+    document.getElementById("playersLower").children[2].appendChild(elem1);
+
 	for(var i = 0; i < roundString.users[3].hand.length; i++) {
-	  var elem1 = document.createElement("p");
-	  elem1.innerHTML = "test";
       var elem2 = document.createElement("img");
       var cardString = '../image/cards/';
       cardString += Cards.imageFromValueSuit(roundString.users[3].hand[i][0],roundString.users[3].hand[i][1]);
       elem2.src = cardString; //communityCards[i]
       elem2.className = "card";
-      // document.getElementById("playersLower").children[2].appendChild(elem1);
       document.getElementById("playersLower").children[2].appendChild(elem2);
 	}  	
+
+    var elem3 = document.createElement("p");
+    elem3.className = "name";
+    elem3.innerHTML = roundString.users[3].name +': $' + roundString.users[3].money;
+    document.getElementById("playersLower").children[2].appendChild(elem3);
 
   }
 
