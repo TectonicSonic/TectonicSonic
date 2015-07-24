@@ -146,7 +146,7 @@ angular.module('app.view1', ['ngRoute'])
 	// check updated gameState received from WebSocket
 	// Game flow chart
 	var gameStateProc = function (gameState) {
-		// required for dynamically change scope
+		// required for dynamically changed scope
 		$scope.$apply(function() {
 			$scope.gameState = JSON.parse(gameStateEmu.gameStateJSON[0]); 				// Test only
 		});
@@ -157,5 +157,4 @@ angular.module('app.view1', ['ngRoute'])
 
 	init();
 	wsComm.wsUpdate(gameStateProc);
-
 }])
