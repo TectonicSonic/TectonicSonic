@@ -18,14 +18,16 @@
 
 	<div class="playersView">
 		<div ng-repeat="user in users">
-			<div ng-repeat="userCardImg in user.cardsImg">
+			<!-- <div ng-repeat="userCardImg in user.cardsImg"> -->
+			<div>
 				<div ng-class="{textBox: user, highlight: user.uid === gameState.turn, inactive: !user.active}">
 					{{user.name}} <br>
 					<!-- InGame: {{user.active}} <br> -->
 					Stake: {{user.stake}} <br>
 					$ {{user.money}} 
 				</div>
-				<img src="{{userCardImg}}" alt="Description"  class="cards">
+				<img src="{{user.cardsImg[0]}}" alt="Description"  class="doubleCard">
+				<!-- <img src="{{user.cardsImg[1]}}" alt="Description"  class="doubleCard"> -->
 			</div>
 		</div>
 	</div>

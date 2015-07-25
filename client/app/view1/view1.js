@@ -13,7 +13,7 @@ angular.module('app.view1', ['ngRoute'])
 	function($scope, Cards, wsComm, httpRequest, gameStateEmu) {
 	// wsComm.wsSend(JSON.stringify("Check"));	
 	var init = function() {
-		$scope.deckCard = Cards.imageCardBack();
+		$scope.deckCard = Cards.imageCardBack();        // static
 		$scope.publicCardsImg = [];
 		$scope.users = [];
 		$scope.myStake = null;
